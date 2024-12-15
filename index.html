@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Yu-Gi-Oh! Game</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+    <!-- Vídeo de fundo -->
+    <video autoplay muted loop id="background-video">
+        <source src="assets/video.mp4" type="video/mp4">
+        Seu navegador não suporta a tag de vídeo.
+    </video>
+
+    <!-- Container principal -->
+    <div class="game-container">
+
+        <!-- Container de cartas do jogador -->
+        <div class="player-container">
+            <h2>Jogador</h2>
+            <div id="player-cards" class="cards-container"></div>
+        </div>
+
+        <!-- Container de cartas do oponente -->
+        <div class="opponent-container">
+            <h2>Oponente</h2>
+            <div id="opponent-cards" class="cards-container"></div>
+        </div>
+
+        <!-- Status do jogo -->
+        <div id="game-status">
+            <p id="player-status">Vida do Jogador: 4000</p>
+            <p id="opponent-status">Vida do Oponente: 4000</p>
+        </div>
+
+        <!-- Botões de controle -->
+        <div id="controls">
+            <button id="attack-btn">Atacar</button>
+            <button id="next-turn-btn">Próximo Turno</button>
+        </div>
+
+    </div>
+
+    <script src="js/app.js"></script>
+</body>
+</html>
